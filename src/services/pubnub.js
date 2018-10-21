@@ -55,7 +55,7 @@ class Room extends EventEmitter {
                 if(channel == m.channel) {
 
                     // emit the message as an event
-                    this.emit('message', m.message);   
+                    this.emit('message', m);   
 
                 }
             },
