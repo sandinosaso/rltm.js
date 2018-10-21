@@ -95,7 +95,7 @@ class Room extends EventEmitter {
         // tell PubNub to subscribe to the supplied channel
         this.pubnub.subscribe({ 
             channels: [channel],
-            withPresence: true,
+            withPresence: false,
             state: state
         });
 
